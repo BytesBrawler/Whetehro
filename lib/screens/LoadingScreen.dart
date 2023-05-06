@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:whethero/utils/Routes.dart';
 
@@ -10,10 +12,15 @@ class LoadingScreen extends StatefulWidget {
 
 class _LoadingScreenState extends State<LoadingScreen> {
 
-  moveToNext(){
-    Future.delayed(Duration(seconds: 3));
-    Navigator.pushReplacementNamed(context, Routes.HomeScreenRoute);
+
+  @override
+  void initState() {
+    super.initState();
+    Timer(const Duration(seconds: 3), () {  Navigator.pushReplacementNamed(context, Routes.HomeScreenRoute);});
+
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +34,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
 
               children: [
                 Image.asset('assets/images/whetherlogo.png',height: 200,width: 200,),
-                Text("Whethero",style: TextStyle(fontSize: 40,fontWeight: FontWeight.w800,color: Colors.blue),)
-                ,Text("By imran"),
-                ElevatedButton(onPressed: (){moveToNext();}, child: Text("Move"))
+                const Text("Whethero",style: TextStyle(fontSize: 40,fontWeight: FontWeight.w800,color: Colors.blue),)
+                ,const Text("By imran"),
               ],
             ),
           ),
