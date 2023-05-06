@@ -4,8 +4,8 @@
 Whethero is modern app that provides real time weather updates and provides accurate weather details
 
 # Screenshots
-![screenshot](https://raw.githubusercontent.com/BytesBrawler/images/main/screenshots/weather%201.jpeg)
-![screenshot](https://raw.githubusercontent.com/BytesBrawler/images/main/screenshots/weather.jpeg)
+<img src="https://raw.githubusercontent.com/BytesBrawler/images/main/screenshots/weather%201.jpeg" alt= "screenshot" width="30%" height="40%" />
+<img src="https://raw.githubusercontent.com/BytesBrawler/images/main/screenshots/weather.jpeg" alt= "screenshot" width="30%" height="40%" />
 
 # Tech Stack
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?logo=dart&logoColor=white&style=for-the-badge)
